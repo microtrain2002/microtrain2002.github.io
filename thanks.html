@@ -3,20 +3,41 @@
     <head>
       <meta charset="UTF-8">
       <title>MicroTrain2002 Thank You</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
       <link rel="author" href="humans.txt" />
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/site.webmanifest">    </head>
     <body>
+      <header>
+        <span class="logo">MicroTrain2002</span>
+        <a id="toggleMenu">Menu<a>
         <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
       <h1>Thank you for contacting me</h1>      
-    </body>
+    </main>
+    <script>
+      var toggleMenu = document.getElementById('toggleMenu');
+      var nav = document.querySelector('nav');
+      toggleMenu.addEventListener(
+          'click',
+          function(){
+          if(nav.style.display=='block'){
+              nav.style.display='none';
+          }else{
+              nav.style.display='block';
+          }
+          }
+      );
+      </script>      
+  </body>
 </html>
