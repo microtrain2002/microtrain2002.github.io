@@ -4,7 +4,11 @@
       <meta charset="UTF-8">
       <title>MicroTrain2002 Contact</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+      <link rel="author" href="humans.txt" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">    </head>
     <body>
         <nav>
         <ul>
@@ -12,6 +16,28 @@
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>      
+      </nav>
+        <form action="https://formspree.io/bootcamp@microtrain.net" method="POST">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="text" name="_replyto">  
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div>
+            <input type="hidden" name="_subject" value="New submission!">
+          </div>
+          <div>
+            <input type="submit" value="Send">
+          </div>
+          <input type="text" name="_gotcha" style="display:none">
+          <input type="hidden" name="_next" value="//microtrain2002.github.io/thanks.html">
+        </form>
     </body>
 </html>
